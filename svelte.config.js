@@ -12,11 +12,11 @@ const config = {
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter({
-			// Использование рендер-функций для Netlify
+			// Использование обычных функций вместо edge функций
 			edge: false,
 			
-			// Для правильного функционирования SSR 
-			split: false
+			// Разделять на разные функции для каждого маршрута
+			split: true
 		})
 	}
 };
